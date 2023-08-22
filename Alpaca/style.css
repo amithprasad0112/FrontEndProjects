@@ -81,7 +81,7 @@ body {
     transform: translate(-50%);
     width: 260px;
     height: auto;
-    z-index: 2;
+    z-index: 3;
   }
 
 .parts.nose {
