@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    font-family: "Josefin Sans";
+    background-color: aliceblue;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.header{
+    display: flex;
+    font-weight: 1000;
+    font-size:xx-large;
+    justify-content: center;
+    align-items: center;
+}
+
+#external-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    display: flex;
+    width: 90%;
+    max-width: 800px;
+    height: 70%;
+    max-height: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+}
+
+#image-section{
+  height: fit-content;;
+}
+
+.alpaca-preview {
+    background-image: url(./alpaca/backgrounds/blue50.png);
+    margin: 2%;
+    border: 2px solid black;
+    padding: 175px;
+    position: relative;
+  }
+
+.parts.neck {
+    background-color: rgba(0, 0, 0, 0);
+    
+    position: absolute;
+    top: 64%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 250px;
+  }
+
+.parts.leg {
+    background-color: rgba(0, 0, 0, 0);
+    
+    position: absolute;
+    top: 64%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 250px;
+  }
+
+.parts.ears {
+    background-color: rgba(0, 0, 0, 0);
+    
+    position: absolute;
+    top: 64%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 250px;
+    z-index: 0;
+  }
+
+.parts.accessories {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 260px;
+    height: auto;
+    z-index: 4;
+  }
+
+.parts.nose {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: auto;
+    z-index: 1; 
+  }
+
+.parts.mouth {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 28.5%;
+    left: 54%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: auto;
+    z-index: 2; /* Place the nose above the mouth and neck */
+  }
+
+.parts.eyes {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: auto;
+    z-index: 4; /* Place the mouth above the neck */
+  }
+
+.parts.hair {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 29.80%;
+    left: 49.9%;
+    transform: translateX(-50%);
+    width: 231px;
+    height: auto;
+    z-index: 3; /* Place the mouth above the neck */
+  }
+
+.Image-Buttons {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#btn-random {
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    background-color:aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-flex;
+    margin-right: 20px;
+
+
+}
+
+#btn-random:hover{
+  background-color: rgb(130, 195, 229);
+  transition: 400ms ease-in-out;
+}
+
+#btn-download {
+    padding: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    background-color:aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+#btn-download:hover{
+  background-color: rgb(130, 195, 229);
+  transition: 400ms ease-in-out;
+}
+
+#image-section {
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 3px;
+    position: relative;
+}
+
+.accessorize{
+    background-color: #fff;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.styles{
+    background-color: #fff;
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.customize-section {
+    width: 50%;
+    background-color: #fff;
+    padding: 10px 20px 20px 40px;
+}
+
+.accessory-button{
+    background-color:aliceblue;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 8px 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin: 3px;
+}
+
+.accessory-button:hover{
+  background-color: rgb(130, 195, 229);
+  transition: 400ms ease-in-out;
+}
+
+.style-button{
+    background-color:aliceblue;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 8px 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin: 3px;
+}
+
+.style-button:hover{
+  background-color: rgb(130, 195, 229);
+  transition: 400ms ease-in-out;
+}
+
+.fa-shake{
+  padding: 2.5px 5px 4px 5px;
+}

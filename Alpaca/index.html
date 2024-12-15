@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpaca</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header">ALPACA GENERATOR</h1>
+    </div>
+
+    <div id="external-container">
+        <span id="image-section">
+            <div class="alpaca-preview ">
+                <img id="hair" class="parts hair" src="./alpaca/hair/default.png" alt="hair">
+                <img id="nose" class="parts nose" src="./alpaca/nose.png" alt="nose">
+                <img id="ears" class="parts ears" src="./alpaca/ears/default.png" alt="ear">
+                <img id="eyes" class="parts eyes" src="./alpaca/eyes/default.png" alt="eyes">
+                <img id="mouth" class="parts mouth" src="./alpaca/mouth/default.png" alt="mouth">  
+                <img id="neck" class="parts neck" src="./alpaca/neck/default.png" alt="neck">
+                <img id="leg" class="parts leg" src="./alpaca/leg/default.png" alt="leg">
+                <img id="accessories" class="parts accessories" src="./alpaca/accessories/headphone.png" alt="accessories">
+
+            </div>
+            <div class="Image-Buttons">
+                <button id="btn-random">
+                    <i class="fa-solid fa-shuffle fa-shake"></i>
+                    Random</button>
+                <button id="btn-download">
+                    <i class="fa-solid fa-download fa-shake"></i>
+                    Download</button>
+            </div>
+        </span>
+        <span class="customize-section">
+            <div>
+                <h1 class="accessorize">Accessorize The Alpaca</h1>
+            </div>
+            <div class="accessorize-buttons">
+                <button class="hair-button accessory-button">Hair</button>
+                <button class="ears-button accessory-button">Ears</button>
+                <button class="eyes-button accessory-button">Eyes</button>
+                <button class="mouth-button accessory-button">Mouth</button>
+                <button class="neck-button accessory-button">Neck</button>
+                <button class="leg-button accessory-button">Leg</button>
+                <button class="accessories-button accessory-button">Accessories</button>
+                <button class="background-button accessory-button">Background</button>
+            </div>
+            <div>
+                <h1 class="styles">Styles</h1>
+            </div>
+            <div id="styles-buttons">
+            </div>
+        </span>
+        
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="./FileSaver.js"></script>
+
+</body>
+</html>
